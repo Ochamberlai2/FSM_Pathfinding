@@ -59,11 +59,12 @@ namespace Pathfinding
                             frontier.UpdateItem(currentNeighbours[i]);
                         }
                     }
-                    if(pathSuccess)
-                    {
-                        return RetracePath(startNode, endNode);
-                    }
+                    
                 }
+            }
+            if(pathSuccess)
+            {
+                return RetracePath(startNode, endNode);
             }
             //no path has been found
             return null;

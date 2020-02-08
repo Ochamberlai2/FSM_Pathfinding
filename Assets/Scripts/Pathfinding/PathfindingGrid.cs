@@ -25,14 +25,14 @@ namespace Pathfinding
         public int maxSize;//the grids x size multiplied by the y
 
         [SerializeField]
-        private bool twoDimensional;
+        private bool twoDimensional = false;
 
         //colours to represent each grid square
         [Space]
         [SerializeField]
-        private Color WalkableGridColor;
+        private Color WalkableGridColor = Color.gray;
         [SerializeField]
-        private Color UnwalkableGridColor;
+        private Color UnwalkableGridColor = Color.red;
 
     
         private void Awake()

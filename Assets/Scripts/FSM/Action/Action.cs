@@ -7,6 +7,6 @@ namespace FSM
   */
   public abstract class Action : ScriptableObject
   {
-          public abstract void Act(StateMachine stateMachine);
+    public abstract void Act(StateMachine stateMachine);
   }
 }

@@ -10,7 +10,11 @@ namespace FSM
         [Required]
         public State CurrentState;
 
-
+        public virtual void Awake() 
+        {
+            if(CurrentState == null)
+                throw new System.Exception(gameObject.name + " does not have a default state assigned");     
+        }
         public virtual void FixedUpdate()
         {
             CurrentState.Tick(this);
